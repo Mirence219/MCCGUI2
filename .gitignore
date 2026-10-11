@@ -361,3 +361,12 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+/env
+/MCC_cs_bridge/lang
+/MCC_cs_bridge/Mapping
+/MCC_cs_bridge/ChatBot.cs
+/MCC_cs_bridge/mcc自定义类型.md
+/MCC_cs_bridge/MinecraftClient-20260906-516-win-x64.exe
+/MCC_cs_bridge/MinecraftClient.backup.ini
+/MCC_cs_bridge/MinecraftClient.ini
+/MCC_cs_bridge/SessionCache.db

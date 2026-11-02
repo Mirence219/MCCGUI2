@@ -372,3 +372,5 @@ FodyWeavers.xsd
 /MCC_bridge/SessionCache.db
 /.github/skills/SKILL.md
 /.github/skills
+/MCC_bridge/ChatBot-API.md
+/MCC_bridge/Program.cs

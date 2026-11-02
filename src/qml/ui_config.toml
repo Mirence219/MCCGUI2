@@ -1,0 +1,29 @@
+[window]
+width = 800
+height = 600
+min_width = 400
+min_height = 300
+
+[theme]
+light_color = "#96b0ff"	#浅色
+main_color = "#9696ff"	#主色
+dark_color = "#b096ff"	#深色
+background_color = "#f6f6fe"	#背景色
+box_color = "#ccf0f0ff"	#盒子颜色
+
+
+[theme.font]
+family = "Microsoft YaHei"
+base_size = 16
+title_size = 32
+
+[theme.background]
+bg_color = "#f0f0ff"
+index_color = "#9696ff"
+bg_image = "" 
+
+[theme.buttons]
+primary_color = "#96b0ff"
+primary_hover = "#ada5fa"
+primary_press = "#9696ff"
+border_color = "#b096ff"

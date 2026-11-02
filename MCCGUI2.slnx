@@ -1,5 +1,15 @@
 <Solution>
-  <Project Path="MCCGUI2.pyproj" Type="888888a0-9f3d-457c-b088-3a5042f75d52">
+  <Configurations>
+    <Platform Name="Any CPU" />
+    <Platform Name="x64" />
+  </Configurations>
+  <Project Path="MCCGUI2.pyproj" Type="888888a0-9f3d-457c-b088-3a5042f75d52" Id="d498cb1e-67b5-4442-9363-296893bd3760">
+    <Platform Project="AnyCPU" />
     <Build Project="false" />
+  </Project>
+  <Project Path="MCC_bridge/MCC_bridge.csproj">
+    <BuildType Project="Release" />
+    <Platform Project="x64" />
+    <Build Solution="*|Any CPU" Project="false" />
   </Project>
 </Solution>

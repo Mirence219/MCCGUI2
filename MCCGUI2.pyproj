@@ -4,13 +4,15 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>d498cb1e-67b5-4442-9363-296893bd3760</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>MCCGUI2.py</StartupFile>
+    <StartupFile>__main__.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
     <Name>MCCGUI2</Name>
     <RootNamespace>MCCGUI2</RootNamespace>
+    <InterpreterId>MSBuild|env|$(MSBuildProjectFullPath)</InterpreterId>
+    <SuppressPackageInstallationPrompt>True</SuppressPackageInstallationPrompt>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -21,10 +23,85 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="MCCGUI2.py" />
+    <Compile Include="src\ipc.py" />
+    <Compile Include="__main__.py" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include=".github\skills\assets\builtin-chatbot-template.cs" />
+    <Content Include=".github\skills\assets\script-chatbot-template.cs" />
+    <Content Include=".github\skills\references\authoring-reference.md" />
+    <Content Include=".github\skills\references\pattern-cookbook.md" />
+    <Content Include=".github\skills\SKILL.md" />
+    <Content Include="src\qml\assets\test_server_icon.jpg" />
+    <Content Include="src\qml\assets\MCC_logo.png" />
+    <Content Include="src\qml\assets\unknown_server.png" />
+    <Content Include="requirements.txt" />
+    <Content Include="resources.qrc" />
+    <Content Include="src\qml\elements\MGCard.qml" />
+    <Content Include="src\qml\elements\MGCheckBox.qml" />
+    <Content Include="src\qml\elements\MGMenu.qml" />
+    <Content Include="src\qml\elements\MGMenuItem.qml" />
+    <Content Include="src\qml\elements\MGMoreButton.qml" />
+    <Content Include="src\qml\elements\MGTabBar.qml" />
+    <Content Include="src\qml\elements\MGTabButton.qml" />
+    <Content Include="src\qml\elements\MGInputLine.qml" />
+    <Content Include="src\qml\elements\MGRadio.qml" />
+    <Content Include="src\qml\elements\MGRoundButton.qml" />
+    <Content Include="src\qml\elements\MGTable.qml" />
+    <Content Include="src\qml\enums\AccountType.qml" />
+    <Content Include="src\qml\enums\qmldir" />
+    <Content Include="src\qml\enums\ServerCoreType.qml" />
+    <Content Include="src\qml\enums\ServerState.qml" />
+    <Content Include="src\qml\items\AddCustomServer.qml" />
+    <Content Include="src\qml\items\AddIncludedServer.qml" />
+    <Content Include="src\qml\items\AddServerPage.qml" />
+    <Content Include="src\qml\items\IncludedServerContent.qml" />
+    <Content Include="src\qml\items\IncludedServerListView.qml" />
+    <Content Include="src\qml\items\Index.qml" />
+    <Content Include="src\qml\items\MccCard.qml" />
+    <Content Include="src\qml\items\ServerInfo.qml" />
+    <Content Include="src\qml\items\ServerPage.qml" />
+    <Content Include="src\qml\items\ServersBar.qml" />
+    <Content Include="src\qml\objects\HoverTracker.qml" />
+    <Content Include="src\qml\objects\urlTool.js" />
+    <Content Include="src\qml\pages\AccountPage.qml" />
+    <Content Include="src\qml\pages\DashboardPage.qml" />
+    <Content Include="src\qml\MGScreen.qml" />
+    <Content Include="src\qml\pages\DownloadPage.qml" />
+    <Content Include="src\qml\pages\SettingPage.qml" />
+    <Content Include="src\qml\test\TestIncludedServerContent.qml" />
+    <Content Include="src\qml\ui_config.toml" />
+    <Content Include="src\qml\TestScreen.qml" />
+    <Content Include="src\qml\elements\MGButton.qml" />
+    <Content Include="src\qml\elements\MGText.qml" />
+    <Content Include="src\qml\Main.qml" />
     <Content Include="README.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include=".github\" />
+    <Folder Include=".github\skills\" />
+    <Folder Include=".github\skills\assets\" />
+    <Folder Include=".github\skills\references\" />
+    <Folder Include="src\qml\assets\" />
+    <Folder Include="src\qml\" />
+    <Folder Include="src\" />
+    <Folder Include="src\qml\elements\" />
+    <Folder Include="src\qml\items\" />
+    <Folder Include="src\qml\enums\" />
+    <Folder Include="src\qml\test\" />
+    <Folder Include="src\qml\objects\" />
+    <Folder Include="src\qml\pages\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Interpreter Include="env\">
+      <Id>env</Id>
+      <Version>3.12</Version>
+      <Description>env (Python 3.12 (64-bit))</Description>
+      <InterpreterPath>Scripts\python.exe</InterpreterPath>
+      <WindowsInterpreterPath>Scripts\pythonw.exe</WindowsInterpreterPath>
+      <PathEnvironmentVariable>PYTHONPATH</PathEnvironmentVariable>
+      <Architecture>X64</Architecture>
+    </Interpreter>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in

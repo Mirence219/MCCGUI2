@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="lang\**" />
+    <EmbeddedResource Remove="lang\**" />
+    <None Remove="lang\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="MinecraftClient-20260906-516-win-x64 - 复制.exe" />
+    <None Remove="MinecraftClient-20260906-516-win-x64.exe" />
+  </ItemGroup>
+
+</Project>

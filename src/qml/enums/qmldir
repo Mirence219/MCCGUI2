@@ -1,0 +1,3 @@
+singleton ServerState 1.0 ServerState.qml
+singleton AccountType 1.0 AccountType.qml
+singleton ServerCoreType 1.0 ServerCoreType.qml
